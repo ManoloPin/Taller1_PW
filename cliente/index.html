@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Ejemplo de sistema de software web en tres capas</title>
-  </head>
-  <body>
-    <form>
-      <label for="id">Cédula:</label><input type="text" id="id" value=""><br>
-      <label for="name">Nombre:</label><input type="text" id="name" value=""><br>
-      <label for="dir">Dirección:</label><input type="text" id="dir" value=""><br>
-      <button type="button" id="enviar">Enviar</button>
-      
-      <button type="button" id="modificar">modificar</button>
-      <button type="button" id="eliminar">eliminar</button>
-    </form>
-    <br>
-    <br>
 
-    <form>
-      <label for="idL"> Buscar-Cédula:</label><input type="text" id="idL" value=""><br>
-      <button type="button" id="cargar">Cargar</button>
-    </form>
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo de sistema de software web en tres capas</title>
+</head>
+
+<body>
+  <form>
+    <label for="id">Cédula:</label><input type="text" id="id" value=""><br>
+    <label for="name">Nombre:</label><input type="text" id="name" value=""><br>
+    <label for="dir">Dirección:</label><input type="text" id="dir" value=""><br>
+    <button type="button" id="enviar">Enviar</button>
+
+    <button type="button" id="modificar">modificar</button>
+    <button type="button" id="eliminar">eliminar</button>
+  </form>
+  <br>
+  <br>
+
+  <form>
+    <label for="idL"> Buscar-Cédula:</label><input type="text" id="idL" value=""><br>
+    <button type="button" id="cargar">Cargar</button>
+  </form>
 
 
-    <div id="resp"></div>
+  <div id="resp"></div>
 
-    <script type="text/javascript" src="controller/fetch.js"></script>
-  </body>
+  <script type="text/javascript" src="controller/fetch.js"></script>
+</body>
+
 </html>
