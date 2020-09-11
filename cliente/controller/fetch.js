@@ -1,9 +1,7 @@
 //Listeners------------------------------------------------------
 document.getElementById("enviar").addEventListener("click", function () { exe("enviar"); });
-
 document.getElementById("modificar").addEventListener("click", function () { exe("modificar"); });
 document.getElementById("eliminar").addEventListener("click", function () { exe("eliminar"); });
-
 document.getElementById("cargar").addEventListener("click", function () { exe("cargar"); });
 //Fin Listeners--------------------------------------------------
 

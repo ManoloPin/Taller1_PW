@@ -44,7 +44,7 @@ else if(isset($_POST['eliminar'])){
   //--1. Crear un objeto ClienteDAO
   $clienteDAO=new ClienteDAO();
   //--2. Crear un objeto cliente usando ClienteDAO
-  $cliente=$clienteDAO->eliminarCliente($_POST['id']);
+  $cliente=$clienteDAO->eliminarCliente($_POST['idL']);
   //Enviar response
  // echo $r[0];
 }
