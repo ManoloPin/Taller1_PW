@@ -23,7 +23,7 @@ function exe() {
       data.append('modificar', document.getElementById('modificar').value);
    }
    else if (arguments[0] == "eliminar") {
-      alert("eliminando");
+      alert("Elemento eliminado");
       data.append('eliminar', document.getElementById('eliminar'))
    }
 
