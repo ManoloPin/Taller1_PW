@@ -10,20 +10,60 @@ document.getElementById("cargar").addEventListener("click", function () { exe("c
 
 function exe() {
    const data = new FormData();
-   if (arguments[0] == "enviar") {
-      alert("Enviando");
+   //Validacion id NO vacio
+
+   if
+      (arguments[0] == "enviar") {
+      if (document.getElementById('id').value.length == 0) {
+         alert('El campo Cédula no puede ser vacio');
+         return false
+      }
+      //Validacion id numerico
+      if (isNaN(parseInt((document.getElementById('id').value)))) {
+         alert('El campo Cédula debe ser numerico');
+         return false
+      }
+      alert("Guardando datos del cliente.");
       data.append('enviar', document.getElementById('enviar').value);
    }
-   else if (arguments[0] == "cargar") {
-      alert("Cargando");
-      data.append('cargar', document.getElementById('cargar').value);
-   }
    else if (arguments[0] == "modificar") {
-      alert("modificando");
+      if (document.getElementById('id').value.length == 0) {
+         alert('El campo Cédula no puede ser vacio');
+         return false
+      }
+      //Validacion id numerico
+      if (isNaN(parseInt((document.getElementById('id').value)))) {
+         alert('El campo Cédula debe ser numerico');
+         return false
+      }
+      alert("Actualizando datos del cliente.");
       data.append('modificar', document.getElementById('modificar').value);
    }
+   else if (arguments[0] == "cargar") {
+      if (document.getElementById('idL').value.length == 0) {
+         alert('El campo Cédula no puede ser vacio');
+         return false
+      }
+      //Validacion id numerico
+      if (isNaN(parseInt((document.getElementById('idL').value)))) {
+         alert('El campo Cédula debe ser numerico');
+         return false
+      }
+      alert("Buscando cliente.");
+      data.append('cargar', document.getElementById('cargar').value);
+   }
+
    else if (arguments[0] == "eliminar") {
-      alert("Elemento eliminado");
+      if (document.getElementById('idL').value.length == 0) {
+         alert('El campo Cédula no puede ser vacio');
+         return false
+      }
+      //Validacion id numerico
+      if (isNaN(parseInt((document.getElementById('idL').value)))) {
+         alert('El campo Cédula debe ser numerico');
+         return false
+      }
+      alert("Cliente eliminado.");
       data.append('eliminar', document.getElementById('eliminar'))
    }
 
