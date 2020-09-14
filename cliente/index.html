@@ -8,8 +8,10 @@
 </head>
 
 <body>
+  <h1>Formulario de clientes</h1>
+  <br>
   <form>
-    <label for="id">Cédula:</label><br><input type="text" id="id" value="" required pattern="[0-9]"><br>
+    <label for="id">*Cédula:</label><br><input type="text" id="id" value="" required pattern="[0-9]"><br>
     <label for="name">Nombre:</label><br><input type="text" id="name" value=""><br>
     <label for="dir">Dirección:</label><br><input type="text" id="dir" value=""><br>
     <button type="button" id="enviar">Guardar</button>
@@ -18,10 +20,12 @@
   <br>
   <br>
   <form>
-    <label for="idL">Cédula:</label><br><input type="text" id="idL" value="" required pattern="[0-9]"><br>
+    <label for="idL">*Cédula:</label><br><input type="text" id="idL" value="" required pattern="[0-9]"><br>
     <button type="button" id="cargar">Buscar</button>
     <button type="button" id="eliminar">Eliminar</button>
   </form>
+  <br>
+  <br>
   <div id="resp"></div>
   <script type="text/javascript" src="controller/fetch.js"></script>
 </body>
